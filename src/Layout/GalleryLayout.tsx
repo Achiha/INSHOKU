@@ -1,13 +1,10 @@
-import React, { useState, Dispatch, SetStateAction } from 'react';
+import React, { useState} from 'react';
 import List from '@/components/List';
 import Modal from '@/components/Modal';
 
 interface GalleryLayoutProps {}
 
-interface ModalProps {
-  selected: any; // replace 'any' with the actual type of 'selected'
-  setSelected: Dispatch<SetStateAction<any>>; // replace 'any' with the actual type of 'selected'
-}
+
 
 const GalleryLayout: React.FC<GalleryLayoutProps> = () => {
   const [selected, setSelected] = useState<null | any>(null);

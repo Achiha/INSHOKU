@@ -15,7 +15,7 @@ interface CardProps {
   } | null;
 }
 
-const Card = ({ setSelected, item, selected }: CardProps) => { // Add 'selected' to the destructured props
+const Card = ({ setSelected, item}: CardProps) => { // Add 'selected' to the destructured props
   const handleContextMenu = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     event.preventDefault();
   };

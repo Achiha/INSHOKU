@@ -1,4 +1,4 @@
-import React from "react";
+
 import textLogo from "@/assets/img_default/textLogo.png";
 
 const Footer = () => {

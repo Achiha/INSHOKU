@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-type Props = {};
+
 
 const handleContextMenu = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
   e.preventDefault(); // Prevent the default context menu behavior
 };
 
-const NotFound = (props: Props) => {
+const NotFound = () => {
   return (
 
 <div className=' h-screen'>

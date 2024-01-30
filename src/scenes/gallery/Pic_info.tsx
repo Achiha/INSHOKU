@@ -1,9 +1,9 @@
-import React from 'react'
+
 import { useParams } from 'react-router-dom'
 
-type Props = {}
 
-const Pic_info = (props: Props) => {
+
+const Pic_info = () => {
 
   const {id} = useParams()
 

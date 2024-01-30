@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import Video from "@/assets/img_default/logovideo.mp4";

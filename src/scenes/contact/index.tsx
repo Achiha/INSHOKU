@@ -2,11 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 
-type FormData = {
-  name: string;
-  email: string;
-  message: string;
-};
+
 
 const Contact: React.FC = () => {
 
@@ -34,9 +30,9 @@ const Contact: React.FC = () => {
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
       },
-      body: JSON.stringify(details),
+      body: JSON.stringify(e),
     });
-    reset();
+    // reset();
     let result = await response.json();
     alert(result.status);
 
@@ -46,7 +42,7 @@ const Contact: React.FC = () => {
 
   };
 
-  const inputStyles = "peer  text-white min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+
 
 
 
